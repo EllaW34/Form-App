@@ -1,0 +1,17 @@
+#content {
+    margin-left: 20px;
+    margin-right: 50%;
+}
+
+body {
+    background-color: rgb(139, 131, 252);
+    color: rgb(255, 255, 255);
+}
+
+.navColor {
+    background-color: rgb(78, 71, 179);
+}
+
+p {
+    font-size: 25px;
+}

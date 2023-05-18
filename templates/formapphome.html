@@ -1,0 +1,77 @@
+{% extends "formapplayout.html" %}
+
+{% set active_page = "home" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <!--page content-->
+    <br>
+    <h1>Fill out this form:</h1>
+    <br>
+    <form action="/p1" method="post">
+        <fieldset>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" value="" required><br><br>
+            <label for="lname">Last name (Optional):</label>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+            <label for="colors">What's your favorite color?</label>
+            <select id="colors" name="colors">
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="purple">Purple</option>
+                <option value="black">Black</option>
+                <option value="gray">Gray</option>
+                <option value="white">White</option>
+                <option value="brown">Brown</option>
+                <option value="pink">Pink</option>
+            </select><br><br>
+            <label for="animal">What's your favorite animal? (Optional)</label>
+            <input type="text" id="animal" name="animal" value=""><br><br>
+            <label for="aname">Come up with a name for your favorite animal: (Optional)</label>
+            <input type="text" id="aname" name="aname" value=""><br><br>
+            <label for="vehicles">Pick a form of transportation:</label>
+            <select id="vehicles" name="vehicles" required>
+                <option value="car">Car</option>
+                <option value="plane">Plane</option>
+                <option value="helicopter">Helicopter</option>
+                <option value="bus">Bus</option>
+                <option value="train">Train</option>
+                <option value="bike">Bike</option>
+                <option value="motorcycle">Motorcycle</option>
+                <option value="skateboard">Skateboard</option>
+                <option value="jetpack">Jet Pack</option>
+                <option value="gokart">Go Kart</option>
+                <option value="Golf Cart">Golf Cart</option>
+            </select><br><br>
+            <label for="weapons">Pick a weapon:</label>
+            <select id="weapons" name="weapons" required>
+                <option value="sword">Sword</option>
+                <option value="axe">Axe</option>
+                <option value="lightsaber">Lightsaber</option>
+                <option value="laserpistol">Laser Pistol</option>
+                <option value="gattlinggun">Gattling Gun</option>
+                <option value="bow">Bow and Arrow</option>
+                <option value="chainsaw">Chainsaw</option>
+                <option value="slingshot">Sling Shot</option>
+                <option value="ninjastars">Ninja Stars</option>
+                <option value="nunchucks">Nunchucks</option>
+                <option value="toothbrush">Toothbrush</option>
+            </select><br><br>
+            <label for="villains">Come up with a fictional villain:</label>
+            <input list="villains" name="villains" required>
+            <datalist id="villains">
+                <option value="Bowser">
+                <option value="Dracula">
+                <option value="Thanos">
+                <option value="The Grinch">
+                <option value="Jerry">
+            </datalist>
+        </fieldset><br>
+        <input id="button" type="submit">
+    </form>
+    
+{% endblock %}

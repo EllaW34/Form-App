@@ -1,0 +1,15 @@
+{% extends "formapplayout.html" %}
+
+{% set active_page = "page1" %}
+
+{% block title %}Page 1{% endblock %}
+
+{% block content %}
+    <!--page content-->
+    <br>
+    <p id="story">{{ story }}</p>
+    <br>
+    <a href="/">
+    <input type="button" value="Back"></input>
+    </a>
+{% endblock %}
